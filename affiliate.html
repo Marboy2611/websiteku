@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buka Link Acak</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Klik untuk Buka Link Acak</h1>
+  <button onclick="bukaLinkAcak()">Buka Link</button>
+
+  <script>
+    const daftarLink = [
+
+
+"https://s.shopee.co.id/4L6aK9RzBg",
+"https://s.shopee.co.id/40TjvZ2SeW",
+"https://s.shopee.co.id/3qAJjGg8w7",
+"https://s.shopee.co.id/50MH7Ql3lz",
+"https://s.shopee.co.id/4L6aKE8VMK",
+"https://link.dana.id/danakaget?c=sw32rkesk&r=bQI2qW&orderId=20250505101214724915010300166128721665857",
+"https://s.shopee.co.id/4q2qvAEzre",
+"https://s.shopee.co.id/2Vew8tJHYh",
+"https://s.shopee.co.id/AA4NGzuA08",
+"https://s.shopee.co.id/9zkx4hyipS",
+"https://s.shopee.co.id/7V3c68CZx0"
+
+
+    ];
+
+    function bukaLinkAcak() {
+      const acak = Math.floor(Math.random() * daftarLink.length);
+      const link = daftarLink[acak];
+      window.open(link, "_blank");
+    }
+  </script>
+
+</body>
+</html>
